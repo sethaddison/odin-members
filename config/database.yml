@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: odin_members_production
-  username: odin_members
+  username:
   password: <%= ENV['ODIN_MEMBERS_DATABASE_PASSWORD'] %>
